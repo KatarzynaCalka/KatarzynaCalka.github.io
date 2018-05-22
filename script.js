@@ -114,6 +114,7 @@ $(document).ready(function() {
       url: requestUrl + '?' + $.param({
         taskId: taskId
       }),
+      contentType: "application/json; charset=utf-8",
       method: 'DELETE',
       success: function() {
         parentEl.slideUp(400, function() { parentEl.remove(); });
